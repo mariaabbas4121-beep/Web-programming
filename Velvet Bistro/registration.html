@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Velvet Bistro Hotel - Registration</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Guest Registration</h2>
+            <form action="registration-success.html" method="get">
+                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </p>
+                    <p>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+92-xxx-xxxxxxx">
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Booking Details</legend>
+                    <p>
+                        <label for="checkin">Check-In Date:</label>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </p>
+                    <p>
+                        <label for="checkout">Check-Out Date:</label>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </p>
+                    <p>
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" required>
+                    </p>
+                    <p>
+                        <label for="room-type">Room Type:</label>
+                        <select id="room-type" name="room-type">
+                            <option value="single">Single Room</option>
+                            <option value="double">Double Room</option>
+                            <option value="suite">Luxury Suite</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Preferences</legend>
+                    <p>
+                        <label>Special Services:</label><br>
+                        <input type="checkbox" id="spa" name="services" value="spa">
+                        <label for="spa">Spa & Wellness</label><br>
+
+                        <input type="checkbox" id="dining" name="services" value="dining">
+                        <label for="dining">Fine Dining</label><br>
+
+                        <input type="checkbox" id="pickup" name="services" value="pickup">
+                        <label for="pickup">Airport Pickup</label>
+                    </p>
+                    <p>
+                        <label for="comments">Additional Requests:</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Let us know any special requests..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Book Now">
+                    <input type="reset" value="Clear Form">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Velvet Bistro Hotel. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <p>If you come once, you will come again.</p>
+    </footer>
+</body>
+</html>
