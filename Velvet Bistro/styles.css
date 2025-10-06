@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 header h1 {
-    background: rgb(87, 69, 69); 
+    background: rgb(100, 54, 54); 
     color: #ffffff;
     display: inline-block;
     width: 100%;
@@ -24,14 +24,13 @@ header h1 {
 
 }
 
-/* Center the heading */
 header {
     text-align: center;
     margin-bottom: 15px;
 }
 
 nav {
-    background: rgb(87, 69, 69); 
+    background: rgb(105, 53, 53); 
     text-align: center;
     padding: 20px 0;
     border:solid black(189, 18, 18);
@@ -50,13 +49,13 @@ nav a:hover {
     color: #f5d76e; 
 }
 
-/* Main content area */
+
 main {
     max-width: 1100px;
     margin: 50px auto;
     padding: 50px;
-    background: rgba(255, 255, 255, 0.6); /* glass effect */
-    backdrop-filter: blur(10px); /* glass blur */
+    background: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(10px); 
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
@@ -64,10 +63,9 @@ main {
     animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Heading inside main */
 main h2 {
     font-size: 2.8rem;
-    color: #3e1f47;  /* deep velvet */
+    color: #3e1f47;  
     margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -85,7 +83,7 @@ main h2::after {
     border-radius: 2px;
 }
 
-/* Each article like a stylish card */
+
 article {
     margin: 25px 0;
     padding: 25px;
@@ -101,7 +99,7 @@ article:hover {
     box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
 
-/* Article titles */
+
 article h3 {
     font-size: 1.7rem;
     color: #6a1e55;
@@ -115,14 +113,14 @@ article h3::before {
     margin-right: 10px;
 }
 
-/* Article text */
+
 article p {
     font-size: 1.15rem;
     line-height: 1.9;
     color: #444;
 }
 
-/* Stylish list boxes */
+
 ul, ol {
     margin: 15px 0 0 25px;
     padding: 15px;
@@ -159,15 +157,15 @@ ul li:hover, ol li:hover {
     transform: translateX(6px);
 }
 
-/* Fade-in animation */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Footer */
+
 footer {
-    background: #2b2526;
+    background: #5f363d;
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -197,4 +195,77 @@ footer nav ul li a:hover {
 footer p {
     margin-top: 8px;
     font-size: 0.9rem;
+}
+
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+caption {
+  font-weight: 600;
+  color: #5c2c35;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+thead {
+  background: #a35b6a;
+  color: #fff;
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f9ecee;
+  transition: background 0.3s ease;
+}
+
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #a35b6a;
+}
+
+form p {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-weight: 600;
+  color: #5c2c35;
+  margin-bottom: 6px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
